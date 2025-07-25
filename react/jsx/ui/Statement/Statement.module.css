@@ -1,0 +1,47 @@
+.statementWrapper {
+    display: flex;
+    align-items: center;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 18px;
+    font-family: 'Cera Pro', sans-serif;
+    color: #333333;
+    gap: 8px;
+    cursor: default;
+    min-width: min(261px);
+}
+
+.downloadTitle {
+    margin-right: 8px;
+}
+
+.buttonTitle {
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #DF853B;
+    cursor: pointer;
+}
+
+.separator {
+    width: 1px;
+    height: 14px;
+    background-color: #333333;
+}
+
+@media only screen
+and (min-device-width: 320px)
+and (max-device-width: 624px) {
+    .statementWrapper {
+
+        font-size: 16px;
+        position: initial;
+        margin-top: 24px;
+    }
+}
+
+@media print {
+    .statementWrapper {
+        display: none
+    }
+
+}

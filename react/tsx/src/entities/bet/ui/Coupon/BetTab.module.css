@@ -1,0 +1,254 @@
+.BetTab {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.couponTypeRadiogroup {
+  padding: 0 5px;
+
+  display: flex;
+  justify-content: flex-start;
+  gap: 8px;
+}
+
+.checkbox {
+  gap: 5px;
+  align-items: center;
+}
+.iconBox {
+  border-radius: 50%;
+}
+.icon {
+  border-radius: 50%;
+
+  background-color: var(--white);
+}
+.checkboxText {
+  font-size: 12px;
+  font-weight: 600;
+  color: #fff;
+}
+
+.disabled {
+  opacity: 0.5;
+  cursor: auto;
+}
+
+.totalCoefficient {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 10px;
+}
+.CouponTotalCoefficientRoot {
+  border-radius: 6px;
+
+  padding: 6px 10px;
+
+  background-color: #d0daf3;
+
+  display: flex;
+  gap: 8px;
+}
+.oddText {
+  color: #364771;
+  font-weight: 700;
+}
+.CouponTotalCoefficientText {
+  color: #405484;
+  font-size: 12px;
+}
+
+.totalWin {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.totalWinText {
+  color: #0dc35d;
+  font-weight: 600;
+  font-size: 12px;
+}
+
+.baseCouponBetForm {
+  display: flex;
+  gap: 8px;
+}
+.BaseCouponInput {
+  z-index: 2;
+
+  border-radius: 8px;
+
+  padding: 7px 10px 9px;
+
+  background-color: #fff;
+
+  height: 30px;
+  width: 100%;
+
+  color: var(--black);
+}
+.BaseCouponInput::placeholder {
+  color: var(--black);
+}
+.allInButton {
+  border-radius: 8px;
+
+  padding: 0 9px;
+
+  background-image: linear-gradient(107.15deg, #0095ff 0%, #0855c4 100%);
+
+  width: 100%;
+  height: 30px;
+
+  color: #fff;
+  font-weight: 600;
+  font-size: 11px;
+}
+.allInButton:disabled {
+  opacity: 0.7;
+}
+
+.agree {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.agreeCheckbox {
+  align-items: center;
+}
+
+.agreeText {
+  color: var(--white);
+  font-size: 11px;
+}
+.remove {
+  border-radius: 8px;
+
+  background-color: var(--black-blue);
+
+  height: 35px;
+  width: 35px;
+
+  display: flex;
+  align-items: center;
+  flex: none;
+  justify-content: center;
+
+  text-align: center;
+}
+.removeIcon {
+  height: 16px;
+
+  fill: var(--white);
+}
+
+.baseCouponSubmit {
+  border-radius: 8px;
+
+  width: 100%;
+  height: 40px;
+
+  background: linear-gradient(98deg, #ffe036, #ffc600);
+  box-shadow: 0 2px 24px #ffca094d;
+
+  color: #090f1e;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+  font-weight: 600;
+  white-space: nowrap;
+  font-size: 13px;
+
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+}
+
+.baseCouponSubmit:disabled {
+  opacity: 0.7;
+  background: var(--gray-20-transparent);
+  box-shadow: none;
+}
+.coupon_wrapper {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 11px 10px 10px;
+  position: relative;
+}
+.coupon_wrapper_lock {
+  filter: brightness(0.7);
+}
+.lock {
+  position: absolute;
+  z-index: 1;
+  left: 22px;
+  opacity: 0.5;
+}
+.coupon_name {
+  color: #000;
+}
+.coefficient_wrapper {
+  display: flex;
+  position: relative;
+  flex-direction: row-reverse;
+  justify-content: flex-end;
+  align-items: center;
+}
+.coefficient {
+  padding: 6px;
+  font-weight: 700;
+  font-size: 12px;
+  align-items: center;
+  background: linear-gradient(143.56deg, #0095ff -58.98%, #0855c4 95.86%);
+  border-radius: 8px;
+  box-shadow: 0 6px 22px #056dda33;
+  color: #fff;
+  display: flex;
+  flex-shrink: 0;
+  justify-content: center;
+  align-self: stretch;
+  margin-right: 8px;
+  width: 46px;
+}
+.coefficient_name {
+  margin-right: 10px;
+  color: #096dff;
+  font-weight: 700;
+  font-size: 11px;
+}
+.closeBtn {
+  align-self: flex-start;
+}
+.closeBtnIcon {
+  position: relative;
+  width: 15px;
+  height: 15px;
+}
+.betListItems {
+  padding-right: 8px;
+  max-height: 320px;
+  overflow-y: auto;
+
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+@media screen and (max-width: 1024px) {
+  .betListItems {
+    max-height: 240px;
+  }
+}
+@media screen and (max-width: 425px) {
+  .betListItems {
+    max-height: 180px;
+  }
+}
+.BetTab .betListItems .toast {
+  z-index: 10000;
+  position: absolute;
+}

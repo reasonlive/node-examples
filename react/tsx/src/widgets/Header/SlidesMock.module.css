@@ -1,0 +1,92 @@
+.slide {
+  position: relative;
+  height: 100%;
+
+  display: flex;
+}
+.slideImage {
+  z-index: -1;
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.slide1image {
+}
+.slide1content {
+  padding-left: 50px;
+
+  width: 100%;
+  height: 100%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.slide1textBig {
+  font-size: 28px;
+  font-weight: 900;
+}
+.slide1textSmall {
+  margin-top: 10px;
+
+  opacity: 0.8;
+
+  font-size: 13px;
+}
+.slide1actions {
+  margin-top: 30px;
+
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.slide1getBonus {
+  border-radius: 10px;
+
+  padding: 12px 20px;
+
+  background: var(--yllow-gradient);
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 4px 20px 0px;
+  transition: 0.2s;
+
+  font-size: 13px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.slide1about {
+  border-radius: 10px;
+
+  padding: 12px 20px;
+
+  background-color: var(--gray-transparent);
+  box-shadow: var(--black-transparent) 0px 4px 20px 0px;
+  transition: 0.2s;
+
+  font-size: 13px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.slide1about:hover,
+.slide1getBonus:hover {
+  transform: scale(1.1);
+}
+
+.slide2 {
+  cursor: pointer;
+}
+.slide2Image {
+  position: relative;
+}
+.slide2ImageSecond {
+  opacity: 0;
+  transition: 0.2s;
+}
+
+.slide2:hover .slide2ImageSecond {
+  opacity: 1;
+}

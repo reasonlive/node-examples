@@ -1,0 +1,23 @@
+{
+  "type": "mysql",
+  "host": "localhost",
+  "port": 3306,
+  "username": "root",
+  "password": "password",
+  "database": "database",
+  "synchronize": true,
+  "entities": [
+    "src/xpubgenerator/entities/**/*.ts"
+  ],
+  "migrations": [
+    "src/xpubgenerator/migrations/**/*.ts"
+  ],
+  "subscribers": [
+    "src/subscriber/**/*.ts"
+  ],
+  "cli": {
+    "entitiesDir": "src/db",
+    "migrationsDir": "src/db",
+    "subscribersDir": "src/db"
+  }
+}

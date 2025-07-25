@@ -1,0 +1,24 @@
+.Home {
+}
+
+.header {
+  grid-area: header;
+}
+
+.err {
+  margin-top: 16px;
+
+  border-radius: 8px;
+
+  padding: 24px;
+
+  background-color: rgb(255 255 255 / 0.05);
+
+  width: 100%;
+
+  text-align: center;
+}
+
+.games {
+  grid-area: table;
+}

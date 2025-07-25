@@ -1,0 +1,127 @@
+.cardWrapper {
+    background-color: #FFFFFF;
+    padding: 20px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-between;
+    color:  #3F3F3F;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 16px;
+    max-width: fit-content;
+    min-width: 332px;
+    transition: all .3s ease;
+    box-sizing: border-box;
+    border: 1px solid  #FFFFFF;
+}
+
+.cardWrapper:hover {
+    box-shadow: 0 0px 22px 0px rgba(161, 156, 151, 0.15);
+    cursor: pointer;
+    background: #FFF;
+    border: 1px solid  #DF853B;
+}
+
+.buttonsWrapper {
+    display: flex;
+    gap: 15px
+}
+
+.infoWrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.infoBlock {
+    display: flex;
+    gap: 8px;
+    padding-right: 18px;
+}
+
+.coinIcon {
+    width: 32px;
+    height: 32px;
+    margin-right: 7px;
+}
+
+.currency{
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 20px;
+}
+
+.fullCurrency {
+    color: #ABABAB;
+
+}
+
+.plate {
+    padding: 4px 8px;
+    display: flex;
+    height: 24px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 12px;
+    border: 1px solid #EDEDED;
+    background-color: #F6F6F6;
+    color: #CD7832;
+}
+
+.plateNon {
+    display: none;
+}
+.amountWrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.amount {
+    color:  #ABABAB;
+}
+
+.amountBlock {
+    display: flex;
+    gap: 8px;
+}
+
+.amountValue {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 24px;
+    text-transform: uppercase;
+}
+
+.amountCoin {
+    color:  #3F3F3F;
+    font-size: 20px;
+    line-height: 24px;
+    text-transform: uppercase;
+}
+
+
+.test {
+    background: url("../../../assets/img/Test.svg") center center no-repeat #FFFFFF;
+}
+
+@media only screen and (max-width: 620px) {
+
+    .cardWrapper {
+        /*width: 100%;*/
+        /*max-width: 100%;*/
+        /*min-width: 100%;*/
+        justify-content: space-between;
+        gap: 10px;
+        padding: 10px;
+    }
+
+    .buttonsWrapper {
+        gap: 10px
+    }
+
+    .infoBlock {
+        padding-right: 0;
+    }
+}
+

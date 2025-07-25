@@ -1,0 +1,145 @@
+.header_wrapper {
+    z-index: 1;
+    display: flex;
+    border-bottom: 1px solid  #D9D9D9;
+    font-family: 'Cera Pro', sans-serif;
+    position: fixed;
+    right:0;
+    width:100%;
+    background: #F6F6F6;
+    /*background: #F6F4F2;*/
+}
+
+
+.header {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
+    padding: 22px 28px;
+}
+
+.logo_block {
+    display: none;
+}
+
+.logo {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 30px;
+    color: #3F3F3F;
+    flex: none;
+    flex-grow: 0;
+    margin: 0 110px 0 15px;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+}
+
+.personBlock {
+    display: flex;
+    align-items: center;
+}
+
+.personBlock img {
+    margin-right: 15px;
+}
+
+.person {
+    margin-right: 82px;
+}
+
+.mobile {
+    display: none;
+}
+
+.myLink {
+    text-decoration: none;
+}
+
+@media only screen
+and (min-device-width: 320px)
+and (max-device-width: 1024px) {
+
+    .header_wrapper {
+        display: flex;
+        justify-content: center;
+        z-index: 20;
+        box-shadow: none;
+        height: fit-content;
+        background-color: #F6F4F2;
+        max-height: initial;
+        left: 0;
+        width: 100%;
+    }
+
+    .logo_block {
+        display: block;
+        position: absolute;
+        left: 70px;
+        top: 10px;
+        cursor: pointer;
+    }
+
+    .header {
+        height: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 16px;
+        width: auto;
+        background: transparent;
+    }
+
+    .desktop {
+        display: none;
+    }
+
+    .mobile {
+        display: flex;
+        flex-direction: column;
+        padding: 12px 16px;
+        width: 100%;
+    }
+
+    .header_buttons_wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .person {
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 18px;
+    }
+
+    .personBlock {
+        display: flex;
+        align-items: center;
+        gap: 4px;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 18px;
+        color: #3F3F3F;
+        margin-top: 20px;
+    }
+
+    .person {
+        margin: 0;
+    }
+
+    /*.myLink {*/
+    /*    display: none;*/
+    /*}*/
+}
+
+
+@media print {
+    .header_wrapper {
+        display: none;
+    }
+}

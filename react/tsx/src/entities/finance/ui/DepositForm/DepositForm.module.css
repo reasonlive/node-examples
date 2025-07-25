@@ -1,0 +1,96 @@
+.DepositForm {
+  border-radius: 15px;
+  overflow: hidden;
+
+  min-height: 450px;
+
+  display: flex;
+  align-items: flex-start;
+}
+@media screen and (max-width: 425px) {
+  .DepositForm {
+    height: auto;
+
+    flex-direction: column;
+  }
+}
+.systemSelectSection {
+  padding: 12px;
+
+  width: 280px;
+  height: 100%;
+
+  background-color: #edf0f7;
+
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto;
+  align-content: flex-start;
+  gap: 8px;
+}
+@media screen and (max-width: 768px) {
+  .systemSelectSection {
+    padding-top: 42px;
+    grid-template-columns: auto auto;
+    justify-content: center;
+  }
+}
+@media screen and (max-width: 768px) {
+  .systemSelectSection_hidden {
+    display: none;
+  }
+}
+.formSection {
+  position: relative;
+
+  width: 280px;
+  height: 100%;
+}
+@media screen and (max-width: 768px) {
+  .formSection {
+    padding-top: 24px;
+
+    display: none;
+  }
+}
+@media screen and (max-width: 768px) {
+  .formSection_open {
+    display: block;
+  }
+}
+
+.formSection_empty {
+  height: 100%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  color: var(--black);
+}
+
+.back {
+  position: absolute;
+
+  top: 12px;
+  left: 12px;
+
+  border-radius: 8px;
+
+  border: 1px solid black;
+
+  display: none;
+  align-items: center;
+  justify-content: center;
+}
+@media screen and (max-width: 768px) {
+  .back {
+    display: flex;
+  }
+}
+.backIcon {
+  transform: rotate(90deg);
+
+  width: 24px;
+  height: 24px;
+}

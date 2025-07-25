@@ -1,0 +1,22 @@
+.recordItem {
+    font-family: var(--bingopay-font);
+    background-color: var(--primary-white);
+    padding: 10px;
+    margin: 10px;
+    border-radius: 20px;
+}
+
+.propertyWrapper {
+    padding: 10px;
+    margin: 10px 0 10px 0;
+}
+
+.propertyTitle {
+    color: var(--gray-dark);
+    font-size: 14px;
+}
+
+.propertyValue {
+    color: var(--primary-black);
+    font-size: 16px;
+}

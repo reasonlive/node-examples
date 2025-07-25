@@ -1,0 +1,22 @@
+.page {
+    padding: 10px;
+    border: 1px solid teal;
+    margin: 5px;
+    cursor: pointer
+}
+
+.page__wrapper {
+    margin-top: 30px;
+    display: flex;
+    margin-left: 16px;
+    margin-bottom: 30px;
+    width: 100%;
+    overflow: auto;
+}
+
+.active {
+    font-weight: bold;
+    border: 3px solid teal;
+    padding: 10px;
+
+}

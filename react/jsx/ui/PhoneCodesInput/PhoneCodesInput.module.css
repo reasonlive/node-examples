@@ -1,0 +1,168 @@
+.input_name {
+    margin-bottom: 7px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 135%;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.04em;
+    color: #5A6061;
+}
+
+
+.my_input {
+    padding: 8px 10px 8px 135px;
+    min-width: 288px;
+    width: 100%;
+    height: 100%;
+    min-height: 52px;
+    border: 1px solid #D9D9D9;
+    background: #FFFFFF;
+    border-radius: 32px;
+    outline: none;
+    box-sizing: border-box;
+    font-weight: 400;
+    color: var(--primary-black);
+    font-family: var(--secondary-font);
+    font-size: 16px;
+    line-height: 24px;
+}
+
+
+.my_input:focus {
+    border-color: var(--primary-orange) !important;
+}
+
+.error {
+    border: 1px solid var(--);
+}
+
+
+.phoneInputWrapper {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.mySelect {
+    position: absolute;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    cursor: pointer;
+}
+
+.selectedBlock {
+    display: flex;
+    align-items: center;
+    padding-left: 25px;
+    margin-right: 10px
+}
+
+
+.mySelect img {
+    margin-right: 5px;
+}
+
+.optionsWrapper {
+    width: 288px;
+    height: 256px;
+    position: absolute;
+    overflow-y: scroll;
+    left: 0;
+    top: 55px;
+    padding: 25px;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.08);
+    border-radius: 28px;
+    transition: all 0.3ms ease;
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 5px;
+    border-radius: 5px;
+
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    display: none;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    height: 30px;
+    background: #EBEBEB;
+    border-radius: 5px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+    margin-left: -30px;
+}
+
+
+.none {
+    display: none;
+}
+
+.arrow {
+    transform: rotate(0);
+    transition: .5s all ease;
+    margin: 4px 15px 0 8px;
+
+}
+
+.arrowReverse {
+    transform: rotate(180deg);
+    transition: .5s all ease;
+    margin: 4px 15px 0 8px;
+
+}
+
+.option {
+    width: auto;
+    height: 25px;
+    font-family: 'Cera Pro', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    color: #000000;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    cursor: pointer;
+    align-items: center;
+}
+
+.countryName {
+    display: flex;
+    align-items: center;
+}
+
+.flag {
+    width: 24px;
+
+}
+
+.selectedPhonecode {
+    font-family: 'Cera Pro', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color: #3F3F3F;
+}
+
+
+@media only screen and (max-width: 640px) and (min-width: 370px) {
+
+    .optionsWrapper {
+
+
+    }
+
+
+}

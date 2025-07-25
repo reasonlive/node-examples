@@ -1,0 +1,100 @@
+.Content {
+}
+
+.actionsDesctop {
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 8px;
+}
+
+.myProfile {
+  border-radius: 8px;
+
+  padding: 6px 15px;
+
+  background-color: var(--blue-30);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.SocialList_link {
+  border-radius: 10px;
+  overflow: hidden;
+  transition: transform 0.3s ease-out;
+  align-items: center;
+  display: flex;
+  height: 35px;
+  justify-content: center;
+  text-align: center;
+  min-width: 45px;
+  font-size: 15px;
+}
+.SocialItemWrapper_telegram {
+  background: linear-gradient(240.2deg, #0fb1d6 0%, #08c 61.34%);
+  box-shadow: 0 5px 16px #4ca2f64d;
+}
+
+.user_wrapper {
+  position: relative;
+  border-radius: 20px 8px 8px 20px;
+  display: flex;
+  gap: 0 8px;
+  padding: 5px 15px 5px 0;
+  margin-left: 10px;
+  background: rgb(35, 45, 69);
+}
+.user_line {
+  display: flex;
+}
+.userRound_wrapper {
+  position: relative;
+  align-items: center;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  height: 29px;
+  width: 29px;
+  background-image: linear-gradient(
+    47deg,
+    #d0a938 3%,
+    #dab94d 10%,
+    #fef19b 62%,
+    #d5b245 88%,
+    #c7940f
+  );
+}
+.userRound {
+  align-items: center;
+  border-radius: 50%;
+  background-color: #2c3756;
+  display: flex;
+  font-size: 10px;
+  justify-content: center;
+  height: 27px;
+  width: 27px;
+}
+.user_line::after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 1px;
+  height: 60%;
+  background-color: #fff;
+  opacity: 0.2;
+  left: -8px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.menu_toggle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 5px;
+  width: 4px;
+}

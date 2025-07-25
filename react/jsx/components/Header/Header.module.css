@@ -1,0 +1,171 @@
+.header {
+    position: fixed;
+    width: 100vw;
+    min-height: 90px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: transparent;
+    padding: 0 20px;
+    z-index: 1;
+}
+.sticky {
+    background-color: white;
+}
+
+.logo_block {
+    display: flex;
+    align-items: center;
+}
+.nav2 {
+    display: block;
+}
+.logo {
+    font-family: 'Cera Pro';
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 30px;
+    color: #3F3F3F;
+    flex: none;
+    flex-grow: 0;
+    margin: 0 110px 0 15px;
+    cursor: pointer;
+}
+
+.apiGuide {
+    font-weight: 600;
+    text-decoration: none;
+    color: #000;
+    font-size: 16px;
+    margin: 15px 5px;
+    padding: 22px;
+    font-family: 'Cera Pro';
+    cursor: pointer;
+}
+
+.apiGuide:hover {
+    color: #EB6D35;
+}
+
+.flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btnWrapper {
+    margin-left: 43px;
+}
+.burger {
+    display: none;
+}
+.link {
+    color: #000;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+}
+a {
+    text-decoration: none;
+}
+
+.link:hover {
+    color: #ABABAB;
+    cursor: pointer;
+}
+
+
+.active {
+    color: #EB6D35;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+
+}
+@media only screen
+and (max-device-width: 1331px) {
+    .header {
+        padding:0 16px;
+    }
+}
+
+@media only screen
+and (max-device-width: 881px) {
+    .logo {
+        margin: 0 40px 0 15px;
+    }
+    .btnWrapper {
+        margin-left: 25px;
+    }
+
+}
+
+@media only screen
+and (min-device-width: 320px)
+and (max-device-width: 1024px) {
+    .nav {
+        display: inline;
+        position: fixed;
+        top: 0;
+        left: 40%;
+        right: 0;
+        bottom: 0;
+        width: 60vw;
+        height: 60vh;
+        background-color: #3F3F3F;
+        z-index: 1;
+    }
+    .nav2 {
+        display: none;
+    }
+    .burger {
+        width: 28px;
+        height: 28px;
+        display: flex;
+        justify-content: space-around;
+        flex-flow: column wrap;
+        position: fixed;
+        top: 20px;
+        right: 20px;
+        z-index: 10;
+    }
+
+    .burger1, .burger2, .burger3 {
+        width: 28px;
+        height: 2px;
+        background-color: #333333;
+        transform-origin: 1px;
+        transition: all 0.3s linear;
+    }
+
+    .header {
+        position: fixed;
+        width: 100%;
+        min-height: 70px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 16px 11px 16px;
+        color: #3F3F3F;
+        background-color: white;
+        z-index: 5;
+    }
+
+    .flex {
+        margin-right: 50px;
+    }
+    .apiGuide {
+        display: none;
+    }
+
+    .logo {
+        display: none;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 23px;
+        margin: 0 47px 0 15px;
+    }
+
+}

@@ -1,0 +1,44 @@
+.Menu {
+  overflow-x: auto;
+
+  border-radius: 8px;
+
+  padding: 12px;
+
+  max-width: 100%;
+
+  background-color: var(--blue-20);
+}
+
+.wrapper {
+  width: max-content;
+
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.item {
+  border-radius: 8px;
+
+  padding: 8px 15px;
+
+  background: var(--black-blue);
+
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.item_active {
+  background: var(--light-blue-gradient);
+}
+
+.icon {
+  fill: var(--white);
+  width: 16px;
+  height: 16px;
+}
+.text {
+  font-weight: 500;
+}

@@ -1,0 +1,48 @@
+.tableCardWrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 16px;
+    gap: 8px;
+    width: 100%;
+    height: fit-content;
+    background: #FFFFFF;
+    border-radius: 20px;
+    box-sizing: border-box;
+    font-family: 'Cera Pro', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    color: #3F3F3F;
+}
+
+.line {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.lineTitle {
+    color: #ABABAB;
+}
+
+.refund {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 16px
+}
+
+.refundWrapper {
+    background-color: #EDEDED;
+    width: 45px;
+    height: 35px;
+    border-radius: 7px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.disabled {
+    opacity: 0.5;
+}

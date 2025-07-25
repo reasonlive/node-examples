@@ -1,0 +1,32 @@
+@import 'antd/dist/reset.css';
+
+
+.custom-dropdown .ant-dropdown-menu {
+    background-color: #f0f0f0;
+}
+.custom-dropdown .ant-dropdown-menu-item {
+    color: red;
+}
+
+
+.dropdownIcon {
+    width: 8px;
+    height: 4px;
+    transition: all .3s ease-in;
+}
+
+.open {
+  transform: rotate(180deg);
+    transition: all .3s ease-in;
+}
+
+.contentStyle  {
+    width: 65px;
+    margin: 0 auto;
+}
+.contentStyle > ul > li {
+    font-weight: 700 !important;
+}
+.contentStyle > ul > li:hover {
+    background-color: #FEE7D5 !important;
+}

@@ -1,0 +1,39 @@
+.UserActions {
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.options {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.option {
+  border-radius: 8px;
+
+  padding: 8px 12px;
+
+  background: var(--light-blue-gradient);
+
+  width: 320px;
+
+  text-align: center;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+@media screen and (max-width: 768px) {
+  .option {
+    width: 100%;
+    font-size: 12px;
+  }
+}
+
+.option_active {
+  background-color: var(--blue-30);
+}

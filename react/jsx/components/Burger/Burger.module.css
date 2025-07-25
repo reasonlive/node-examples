@@ -1,0 +1,15 @@
+.burger {
+    width: 28px;
+    height: 28px;
+    display: flex;
+    justify-content: space-around;
+    flex-flow: column wrap;
+}
+
+.burgerItem {
+    width: 28px;
+    height: 2px;
+    background-color: #333333;
+    transform-origin: 1px;
+    transition: all 0.3s linear;
+}

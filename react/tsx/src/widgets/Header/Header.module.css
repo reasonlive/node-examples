@@ -1,0 +1,25 @@
+.Header {
+  width: 100%;
+
+  display: flex;
+  align-items: flex-start;
+  gap: 15px;
+}
+
+@media screen and (max-width: 1475px) {
+  .authForm {
+    display: none;
+  }
+}
+
+.Header .slider {
+  height: 440px;
+  aspect-ratio: 183 / 88;
+}
+
+@media screen and (max-width: 768px) {
+  .Header .slider {
+    height: auto;
+    width: 915px;
+  }
+}

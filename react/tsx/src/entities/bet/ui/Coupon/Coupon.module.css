@@ -1,0 +1,54 @@
+.Coupon {
+  position: sticky;
+  top: 79px;
+
+  border-radius: 10px;
+
+  padding: 10px;
+
+  background-image: linear-gradient(135deg, #233358, rgba(20, 27, 46, 0.6));
+
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.tabbar {
+  display: flex;
+  gap: 12px;
+}
+.tab {
+  position: relative;
+
+  border-radius: 8px;
+
+  background-color: #ffffff1a;
+  transition: opacity 0.2s;
+
+  height: 30px;
+
+  display: flex;
+  flex: auto;
+  justify-content: center;
+  align-items: center;
+
+  text-align: center;
+  font-size: 12px;
+}
+.active {
+  background-image: linear-gradient(103deg, #108de7 -30%, #0855c4 100%);
+}
+.counter {
+  top: -4px;
+  right: -4px;
+  position: absolute;
+  z-index: 2;
+  background-color: white;
+  color: black;
+  border-radius: 100%;
+  font-size: 12px;
+  width: 20px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

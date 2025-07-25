@@ -1,0 +1,60 @@
+.MyBtn {
+    font-family: "Cera Pro";
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 40px;
+    background: #3F3F3F;
+    border-radius: 32px;
+    color: #F6F6F6;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 18px;
+    transition: all .3s ease-in-out;
+}
+
+.popup {
+    padding: 15px 71px;
+    width: 175px;
+    height: 55px;
+}
+
+
+.padding {
+    padding: 10px 30px;
+    font-size: 18px;
+    line-height: 23px;
+    color: #F6F6F6;
+}
+
+.MyBtn:hover {
+    background: #DF853B;
+}
+.MyBtn:disabled {
+    color: #CCCCCC;
+    background: #EDEDED;
+}
+
+@media only screen
+and (min-device-width: 320px)
+and (max-device-width: 624px) {
+    .MyBtn {
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 18px;
+        padding: 8px 20px;
+    }
+
+    .popup {
+        padding: 10px 51px;
+        width: auto;
+    }
+
+    .padding {
+        padding: 10px 30px;
+        width: 100%;
+    }
+}

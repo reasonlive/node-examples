@@ -1,0 +1,39 @@
+.button {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 22px;
+    border: none;
+    background-color: #EDEDED;
+    cursor: pointer;
+    transition: all .3s ease;
+}
+
+.inactive {
+    background-color:#CCCCCC;
+}
+
+.button:hover {
+    background-color:#D9D9D9;
+}
+
+.secondaryBtn {
+    background-color: #DF853B;
+}
+
+.secondaryBtn:hover {
+
+    background-color: #CD7832;
+}
+
+.secondaryBtn.inactive {
+    background-color: #F2CEB1;
+}
+
+.icon {
+    width: 20px;
+    height: 20px;
+
+}

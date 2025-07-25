@@ -1,0 +1,56 @@
+.MyBtn {
+    font-family: "Cera Pro",sans-serif;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 35px;
+    border-radius: 32px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 20px;
+    text-wrap: none;
+    color: #FFFFFF;
+    transition: all .3s ease-in-out;
+}
+
+.MyBtn:hover {
+    background: #CD7832;
+    color: #FFFFFF;
+}
+
+.active {
+    background: #DF853B;
+
+}
+
+.padding {
+    padding: 10px 30px;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 23px;
+    color: #ABABAB;
+}
+
+.rus {
+    padding: 10px 17px;
+}
+
+@media only screen
+and (min-device-width: 320px)
+and (max-device-width: 624px) {
+    .MyBtn {
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 18px;
+        padding: 8px 20px;
+        width: auto;
+        white-space: nowrap;
+    }
+
+    .MyBtn:hover {
+        background: #DF853B;
+    }
+}

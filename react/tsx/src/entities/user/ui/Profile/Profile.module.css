@@ -1,0 +1,81 @@
+.Profile {
+  border-radius: 8px;
+
+  padding: 24px;
+
+  background-color: var(--blue-20);
+
+  width: 100%;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column-reverse;
+  gap: 12px;
+}
+
+@media screen and (max-width: 1024px) {
+  .Profile {
+    flex-direction: column-reverse;
+  }
+}
+
+.changePassword {
+  border-radius: 8px;
+
+  padding: 6px 12px;
+
+  background-color: var(--blue-30);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2px;
+}
+
+.userInfo {
+  position: sticky;
+  top: 64px;
+
+  border-radius: 8px;
+
+  padding: 24px;
+
+  background-color: var(--blue-00);
+
+  width: 320px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+@media screen and (max-width: 1024px) {
+  .userInfo {
+    position: static;
+
+    width: 100%;
+  }
+}
+
+.userInfoTitle {
+  font-size: 18px;
+  font-weight: 500;
+}
+.userInfoText {
+}
+.money {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.moneyItem {
+  border-radius: 4px;
+
+  padding: 4px;
+
+  background-color: var(--blue-20);
+
+  display: flex;
+  gap: 8px;
+}
