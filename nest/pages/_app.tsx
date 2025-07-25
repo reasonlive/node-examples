@@ -92,7 +92,7 @@ function MyApp({ Component, pageProps }: AppPropsWithLayout): JSX.Element {
               return getUserFriendlyName(
                   props.resource?.name,
                   props.action === "list" ? "plural" : "singular",
-              ) + ' | Bingopay';
+              ) + ' | ' + config.APP_NAME;
             }}/>
           </Refine>
         </ColorModeContextProvider>
